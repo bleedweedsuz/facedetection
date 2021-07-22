@@ -1,6 +1,16 @@
 import numpy as np
 
 class Utility:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
     def __init__(self, cv2):
         self.cv2 = cv2
 
@@ -21,3 +31,7 @@ class Utility:
 
     def drawOnMouthLMark(self, frame, lMarks):
         Utility.addPolygon(self.cv2, frame, np.array([[lMarks.part(48).x,lMarks.part(50).y], [lMarks.part(54).x,lMarks.part(50).y], [lMarks.part(54).x,lMarks.part(57).y], [lMarks.part(48).x,lMarks.part(57).y]], dtype=np.int32), (255, 0, 0)) #Mouth
+    
+    @staticmethod
+    def log(color, str):
+        print(f"{color}{str}")
