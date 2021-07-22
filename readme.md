@@ -1,5 +1,5 @@
 ## 68 Land marks Face detection
-Face detection system using opencv. 
+Face detection system using OpenCV. Two modes available face detection in image and real time video capture. Also available face box, landmarks in frames.
 
 ### Requirements:
 1. numpy==1.21.1
