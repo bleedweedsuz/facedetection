@@ -15,7 +15,7 @@ Face detection system using opencv.
     pip install numpy
     ```
 
-### Use
+### Example
 ```
 python app.py
 ```
