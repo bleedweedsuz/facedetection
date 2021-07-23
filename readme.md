@@ -2,7 +2,7 @@
 Face detection system using OpenCV. Two modes available face detection in image and real time video capture. Also available face box, landmarks in frames.
 
 ### Requirements:
-1. numpy==1.21.1
+1. numpy=1.21.1
     ```
     pip install numpy
     ```
@@ -10,9 +10,13 @@ Face detection system using OpenCV. Two modes available face detection in image 
     ```
     pip install opencv-python
     ```
-3. dlib==19.22.0
+3. cmake=3.21.0 (Before installing dlib make sure you install "cmake")
     ```
-    pip install numpy
+    pip install cmake
+    ```
+4. dlib=19.22.0
+    ```
+    pip install dlib
     ```
 
 ### Example
