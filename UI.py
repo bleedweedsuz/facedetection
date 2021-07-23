@@ -35,6 +35,6 @@ class UI:
             isFacebox = (input("Enable Facebox (y/n): ").strip()=="y")
             isLandmarks = (input("Enable Landmarks (integer) (y/n): ").strip()=="y")
             Utility.log(Utility.OKBLUE, "Use 'q' to quit the frame.")
-            Image68Landmarks(path, isFacebox, isLandmarks)
+            Image68Landmarks(path, isFacebox=isFacebox, isLandmarks=isLandmarks)
         except:
             Utility.log(Utility.FAIL, "Something goes wrong..\nHint: parameter not correct or camera is used.")

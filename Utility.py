@@ -18,7 +18,7 @@ class Utility:
         self.cv2.fillConvexPoly(image, points, color)
     
     def drawOnLeftEyeLMark(self, frame, lMarks):
-        Utility.addPolygon(self.cv2, frame, np.array([[lMarks.part(36).x,lMarks.part(37).y], [lMarks.part(39).x,lMarks.part(37).y], [lMarks.part(39).x,lMarks.part(40).y], [lMarks.part(36).x,lMarks.part(41).y]], dtype=np.int32), (0, 255, 0)) #leftEye
+        Utility.addPolygon(self.cv2, frame, np.array([[lMarks.part(36).x,lMarks.part(37).y], [lMarks.part(39).x,lMarks.part(38).y], [lMarks.part(39).x,lMarks.part(40).y], [lMarks.part(36).x,lMarks.part(41).y]], dtype=np.int32), (0, 255, 0)) #leftEye
     
     def drawOnRightEyeLMark(self, frame, lMarks):
         Utility.addPolygon(self.cv2, frame, np.array([[lMarks.part(42).x,lMarks.part(43).y], [lMarks.part(45).x,lMarks.part(43).y], [lMarks.part(45).x,lMarks.part(46).y], [lMarks.part(42).x,lMarks.part(47).y]], dtype=np.int32), (0, 255, 0)) #rightEye
