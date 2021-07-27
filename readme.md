@@ -37,7 +37,7 @@ Enable Landmarks (integer) (y/n): y
 Use 'q' to quit the frame.
 
 
-*******OFFLINE LOCAL******
+*******LOCAL FILE******
 Select Modes: 
 1. Realtime Video Capture (Camera)= '1' or 'r' or 'R'
 2. Static Image= '2' or 's' or 'S'
@@ -52,3 +52,4 @@ Strted  27-07-2021-22-59-25-398762
 End  27-07-2021-22-59-25-446707
 Exported To:  D:\exports/27-07-2021-22-59-25-436702.jpg
 ```
+*Note for local file use potrait image of person for better result.
