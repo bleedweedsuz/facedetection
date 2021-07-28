@@ -19,7 +19,7 @@ OS: Windows 10
     ```
     pip install wheel
     ```
-5. Install latest visual studio build tools: (Visual Studio)[https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15]
+5. Install latest visual studio build tools: [Visual Studio](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)
 4. dlib=19.22.0
     ```
     pip install dlib
