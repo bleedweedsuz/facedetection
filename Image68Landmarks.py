@@ -35,13 +35,6 @@ class Image68Landmarks:
         for face in faces: #Loop all faces capture by detector
             if self.isFacebox: cv2.rectangle(frame, (face.left(), face.top()), (face.right(), face.bottom()), (0, 255, 0), 2) #Create rectangle box in face
 
-            if(self.exportFBCapture):
-                fBoxExport = path + "_Fbox_" + (datetime.now().strftime("%d-%m-%Y-%H-%M-%S-%f")) + ".jpg"
-                exportImage = frame.copy()
-                exportImage = exportImage[face.top():face.bottom(), face.left():face.right()] #Crop image
-                cv2.imwrite(fBoxExport, exportImage)
-                print("Facebox exported: " + fBoxExport)
-
             lMarks = self.predictor(gColor, face) #Get landmarks using predictor file in dlib
             if self.isLandmarks: 
                 for i in range(0, 68): cv2.circle(frame, (lMarks.part(i).x, lMarks.part(i).y), 2, (255, 0, 0), -1) #Adding landmarks using circle  #Loop landmarks in face
@@ -52,6 +45,13 @@ class Image68Landmarks:
             if self.nose: self.utility.drawOnNoseLMark(frame, lMarks)
             if self.mouth: self.utility.drawOnMouthLMark(frame, lMarks)
 
+            if(self.exportFBCapture):
+                fBoxExport = path + "_Fbox_" + (datetime.now().strftime("%d-%m-%Y-%H-%M-%S-%f")) + ".jpg"
+                exportImage = frame.copy()
+
+                exportImage = exportImage[face.top():face.bottom(), face.left():face.right()] #Crop image
+                cv2.imwrite(fBoxExport, exportImage)
+                print("Facebox exported: " + fBoxExport)
             
 
         if self.imShow: cv2.imshow("Image 68 Landmarks", self.capture)

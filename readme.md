@@ -25,6 +25,12 @@ OS: Windows 10
     pip install dlib
     ```
 
+## Features
+1. Realtime video capture face detection
+2. Local image face detection
+3. Extract faces from local image
+
+
 ### Example
 ```
 python app.py
@@ -39,8 +45,7 @@ Enter Realtime Parameters:
 Enter screen width (integer): 800
 Enter screen height (integer): 800
 Enable Facebox (y/n): y
-Enable Landmarks (integer) (y/n): y
-Export facebox capture (integer) (y/n): y
+Enable Landmarks (y/n): y
 Use 'q' to quit the frame.
 
 
@@ -53,7 +58,9 @@ Enter Mode:2
 Enter Static Parameters:
 Enter image path (d:/img/xyz.jpg): d:/reference_1.jpg
 Enable Facebox (y/n): y
-Enable Landmarks (integer) (y/n): y
+Enable Shapes (y/n): y
+Export facebox capture (y/n): y
+Enable Landmarks (y/n): y
 Use 'q' to quit the frame.
 Strted  27-07-2021-22-59-25-398762
 End  27-07-2021-22-59-25-446707
@@ -61,8 +68,5 @@ Exported To:  D:\exports/27-07-2021-22-59-25-436702.jpg
 ```
 *Note for local file use potrait image of person for better result.
 
-
-## Features
-1. Realtime video capture face detection
-2. Local image face detection
-3. Extract faces from local image
+### Example Image (Local image used)
+Note: Credit Image: https://unsplash.com/  License: https://unsplash.com/license

@@ -33,9 +33,13 @@ class UI:
             Utility.log(Utility.OKGREEN,"Enter Static Parameters:")
             path = input("Enter image path (d:/img/xyz.jpg): ").strip()
             isFacebox = (input("Enable Facebox (y/n): ").strip()=="y")
-            isLandmarks = (input("Enable Landmarks (integer) (y/n): ").strip()=="y")
-            exportFBCapture = (input("Export facebox capture (integer) (y/n): ").strip()=="y")
+            isLandmarks = (input("Enable Landmarks (y/n): ").strip()=="y")
+            isAddShapes = (input("Enable Shapes (y/n): ").strip()=="y")
+            exportFBCapture = (input("Export facebox capture (y/n): ").strip()=="y")
             Utility.log(Utility.OKBLUE, "Use 'q' to quit the frame.")
-            Image68Landmarks(path, isFacebox=isFacebox, isLandmarks=isLandmarks, exportFBCapture=exportFBCapture)
+            if(isAddShapes):
+                Image68Landmarks(path, isFacebox=isFacebox, isLandmarks=isLandmarks, exportFBCapture=exportFBCapture, leftEye=True, rightEye=True, nose=True, mouth=True)
+            else:
+                Image68Landmarks(path, isFacebox=isFacebox, isLandmarks=isLandmarks, exportFBCapture=exportFBCapture)
         except:
             Utility.log(Utility.FAIL, "Something goes wrong..\nHint: parameter not correct or camera is used.")
