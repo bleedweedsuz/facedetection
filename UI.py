@@ -34,7 +34,8 @@ class UI:
             path = input("Enter image path (d:/img/xyz.jpg): ").strip()
             isFacebox = (input("Enable Facebox (y/n): ").strip()=="y")
             isLandmarks = (input("Enable Landmarks (integer) (y/n): ").strip()=="y")
+            exportFBCapture = (input("Export facebox capture (integer) (y/n): ").strip()=="y")
             Utility.log(Utility.OKBLUE, "Use 'q' to quit the frame.")
-            Image68Landmarks(path, isFacebox=isFacebox, isLandmarks=isLandmarks)
+            Image68Landmarks(path, isFacebox=isFacebox, isLandmarks=isLandmarks, exportFBCapture=exportFBCapture)
         except:
             Utility.log(Utility.FAIL, "Something goes wrong..\nHint: parameter not correct or camera is used.")
