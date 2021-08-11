@@ -40,6 +40,7 @@ Enter screen width (integer): 800
 Enter screen height (integer): 800
 Enable Facebox (y/n): y
 Enable Landmarks (integer) (y/n): y
+Export facebox capture (integer) (y/n): y
 Use 'q' to quit the frame.
 
 
@@ -59,3 +60,9 @@ End  27-07-2021-22-59-25-446707
 Exported To:  D:\exports/27-07-2021-22-59-25-436702.jpg
 ```
 *Note for local file use potrait image of person for better result.
+
+
+## Features
+1. Realtime video capture face detection
+2. Local image face detection
+3. Extract faces from local image
