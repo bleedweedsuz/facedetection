@@ -70,3 +70,4 @@ Exported To:  D:\exports/27-07-2021-22-59-25-436702.jpg
 
 ### Example Image (Local image used)
 Note: Credit Image: https://unsplash.com/  License: https://unsplash.com/license
+![Example Image](https://github.com/bleedweedsuz/facedetection/blob/master/example/example.jpg)
